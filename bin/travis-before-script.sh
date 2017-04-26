@@ -10,8 +10,6 @@ if [[ -f 'fullcalendar-branch.txt' ]]
 then
 	branch=`cat 'fullcalendar-branch.txt'`
 
-	rm -rf "fullcalendar"
-
 	if [[ -d "fullcalendar" ]]
 	then
 		echo "Already a nested fullcalendar git project."
