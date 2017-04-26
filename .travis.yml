@@ -7,6 +7,7 @@ cache:
     - node_modules
     - fullcalendar
 
-before_install: bin/travis-before-install.sh
 before_script: bin/travis-before-script.sh
+after_script: bin/travis-after-script.sh
+
 script: npm run test
