@@ -33,6 +33,7 @@ then
 
 	echo "Creating symlink."
 	cd ../node_modules
+	rm -rf "fullcalendar"
 	ln -s "../fullcalendar" "fullcalendar"
 else
 
