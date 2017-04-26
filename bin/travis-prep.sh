@@ -29,7 +29,8 @@ then
 		cd "fullcalendar"
 	fi
 
-	# build
+	# in the node_modules/fullcalendar dir,
+	# which is a fake dependency dir now
 	npm install
 	gulp dist
 else
@@ -40,6 +41,8 @@ else
 		echo "and using the proper fullcalendar dependency."
 
 		rm -rf "node_modules/fullcalendar"
+
+		# refetches the fullcalendar dep for the root project
 		npm install
 	fi
 fi
